@@ -43,7 +43,7 @@ namespace akvwebapp
     };
 var client = new SecretClient(new Uri("https://fornetcoreapp.vault.azure.net//"), new DefaultAzureCredential(),options);
 
-KeyVaultSecret secret = client.GetSecret("<mySecret>");
+KeyVaultSecret secret = client.GetSecret("SecretForAppNetCore");
 
 string secretValue = secret.Value;
 
